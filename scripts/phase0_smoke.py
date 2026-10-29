@@ -44,7 +44,7 @@ def mask_centroid(record) -> tuple[float, float, int]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--image", type=Path, default=DEFAULT_IMAGE)
-    parser.add_argument("--concept", default="orange ball")
+    parser.add_argument("--concept", default="orange circle")  # SAM finds no "ball" in a flat-shaded disc
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 
