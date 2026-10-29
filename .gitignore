@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PhysLab
+!.env.example
+data/cache/
+data/real/*.mp4
+data/real/*.mov
+data/real/*.MOV
+data/synthetic/*.mp4
+output/
